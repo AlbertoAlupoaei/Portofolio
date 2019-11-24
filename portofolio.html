@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Portofolio AlbertoBix</title>
+  </head>
+  <body>
+  <div class="container">
+      <div class="sidebar">
+        <nav>
+          <ul>
+            <li><a href="file:///C:/Users/rodas/Desktop/Portofoliox2/index.html">About</a></li>
+            <li><a href="file:///C:/Users/rodas/Desktop/Portofoliox2/portofolio.html">Portofolio</a></li>
+           <li><a href="file:///C:/Users/rodas/Desktop/Portofoliox2/contact.html">Contact</a></li>
+    
+          </ul>
+        </nav>
+
+            <img class="diamont" src="portofolio.png" alt="">
+      </div>
+
+      <div class="content">
+        <section class="hero">
+
+
+          <div class="hero-content">
+            <h1>Portofolio  <br> Alberto Alupoaei</h1>
+            <p>I have any affiliate sites <a class="linkuri" href="http://www.binausoffice.com/">BINAUSOFFICE</a> and <a class="linkuri" href="http://www.glamour-radstat.at/index.html">GLAMOUR</a>
+                .The first site is mine and the second one is made to order.Below you can see other prototypes created by me.</p>
+
+  </div>  </section>
+
+      </div>
+  </div>
+
+
+<script>
+ var i = 0;
+ var images = [];
+ var time = 3000;
+
+
+images[0] = '1.png';
+images[1] = '2.png';
+images[2] = '3.png';
+images[3] = '4.png';
+images[4] = '5.png';
+images[5] = '6.png';
+images[6] = '7.png';
+
+function changeImg(){
+  document.slide.src = images[i];
+
+
+if(i < images.length - 1){
+  i++;
+}else {
+  i = 0;
+}
+
+setTimeout("changeImg()", time);
+
+}
+
+window.onload = changeImg;
+
+</script>
+
+<img class="script" name="slide" width="800" height="500">
+
+
+  </body>
+</html>
